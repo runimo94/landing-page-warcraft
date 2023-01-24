@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FooterService } from './services/footer.service';
 
 @Component({
   selector: 'app-root',
@@ -50,4 +51,22 @@ export class AppComponent {
   //Footer
   public textoDerechos: string =
     '©2023 Blizzard Entertainment, Inc. Todos los derechos reservados. Todas las marcas comerciales a las que se hace referencia son propiedad de sus respectivos dueños.';
+
+  constructor(private footerService: FooterService) {
+    //Datos de info del footer
+    this.footerService.urlImgInfoLogo = 'assets/world-of-warcraft.svg';
+    this.footerService.tituloInfo = 'World of Warcraft';
+    this.footerService.textoInfo =
+      'World of Warcraft es un juego del rol en linea masivo de Blizzard Entertainment';
+
+    //Datos de otros juegos
+    this.footerService.tituloOtherGames = 'Otros juegos';
+    this.footerService.listOtherGames = [
+      { name: 'Hearthstone', url: '' },
+      { name: 'StarCraft', url: '' },
+      { name: 'Diablo', url: '' },
+      { name: 'Overwatch', url: '' },
+      { name: 'Warcraft III', url: '' },
+    ];
+  }
 }
