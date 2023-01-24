@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        wall1: "url(assets/background/warcraft_wall_1.png)",
-        wall1xl: "url(assets/background/warcraft_wall_1_xl.png)",
-        wall2: "url(assets/background/warcraft_wall_2.png)",
+        wall2md: "url(assets/background/warcraft_wall_2_md.png)",
+        wall2xl: "url(assets/background/warcraft_wall_2_xl.png)",
+        divider: "url(assets/divider.webp)",
+        backstone: "url(assets/background/bg_stone_desktop.webp)",
+        backstone_xs: "url(assets/background/bg_stone_mobile.webp)",
+        map_northrend: "url(assets/background/map_northrend_gray.webp)",
+        forest: "url(assets/background/bg_forest.webp)",
       },
     },
   },
