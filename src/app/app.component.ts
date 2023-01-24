@@ -16,7 +16,7 @@ export class AppComponent {
   public urlImg1: string = '../../../assets/screenshot_bridge.webp';
   public posLeftImg1: boolean = false;
 
-  // Datos de la primera sección
+  // Datos de la segunda sección
   public titulo2: string =
     'Conoce las características clave de World of Warcraft y comienza tu aventura';
   public texto2: string =
