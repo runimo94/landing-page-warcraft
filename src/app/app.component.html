@@ -19,45 +19,16 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-14">
 
       <div class="col-span-1 md:col-span-2 mx-auto">
-        <h2 class="text-gray-300 font-sans font-black text-3xl">
+        <h2 class="text-gray-300 font-sans font-black text-3xl text-center">
           Elige la edición perfecta de World of Warcraft para ti
         </h2>
       </div>
 
-      <div class="flex flex-col items-center">
-        <img class="w-32 mb-5" src="../assets/world-of-warcraft.svg" alt="Retail">
-        <h2 class="text-gray-300 font-sans font-black text-3xl">
-          Edicion Retail
-        </h2>
-        <ul class="flex flex-col py-5 px-16 gap-5">
-          <li class="text-gray-300 text-center">Juega con las nuevas clases como el Monje o Evocador
-          </li>
-          <li class="text-gray-300 text-center">Disfruta de contenido actualizado a la última expansión</li>
-          <li class="text-gray-300 text-center">Gráficos y modelos mejorados</li>
-          <li class="text-gray-300 text-center">Nuevas dificultades y mecánicas como mazmorras de dificultad mítica plus
-          </li>
-        </ul>
-        <button
-          class=" hover:bg-gray-100 bg-gray-300 text-black border border-gray-300 rounded-lg px-4 py-2 ">Selecciona
-          Retail</button>
-      </div>
+      <app-edicion [urlImg]="imgEdRetail" [titulo]="tituloEdRetail" [listaCaracteristicas]="listaCaracEdRetail"
+        [textoBoton]="textoBotonEdRetail"></app-edicion>
 
-      <div class="flex flex-col items-center">
-        <img class="w-32 mb-5" src="../assets/world-of-warcraft.svg" alt="Classic">
-        <h2 class="text-gray-300 font-sans font-black text-3xl">
-          Edicion Classic
-        </h2>
-        <ul class="flex flex-col py-5 px-16 gap-5">
-          <li class="text-gray-300 text-center">Recuerda el juego como se lanzó en 2004</li>
-          <li class="text-gray-300 text-center">Toda la dificultad de antaño en los tiempos de ahora</li>
-          <li class="text-gray-300 text-center">Más social e interactivo</li>
-          <li class="text-gray-300 text-center">Mayor importancia en el progreso de nivel de personaje y mundo mas
-            inmersivo</li>
-        </ul>
-        <button
-          class=" hover:bg-gray-100 bg-gray-300 text-black border border-gray-300 rounded-lg px-4 py-2 ">Selecciona
-          Classic</button>
-      </div>
+      <app-edicion [urlImg]="imgEdClassic" [titulo]="tituloEdClassic" [listaCaracteristicas]="listaCaracEdClassic"
+        [textoBoton]="textoBotonEdClassic"></app-edicion>
 
     </div>
   </section>
