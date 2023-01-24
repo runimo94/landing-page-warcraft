@@ -50,14 +50,14 @@ export class AppComponent {
 
   //Multimedia
   public listUrlsImgsMultimedia: string[] = [
-    'assets/cinematic_render_1.webp',
-    'assets/cinematic_render_2.webp',
-    'assets/cinematic_render_frostmourne_full.webp',
-    'assets/cinematic_render_scourge_full.webp',
-    'assets/screenshot_draktheron_full.webp',
-    'assets/screenshot_garden.webp',
-    'assets/screenshot_magma.webp',
-    'assets/screenshot_utgardekeep_full.webp',
+    'assets/gallery/cinematic_render_1.webp',
+    'assets/gallery/cinematic_render_2.webp',
+    'assets/gallery/cinematic_render_frostmourne_full.webp',
+    'assets/gallery/cinematic_render_scourge_full.webp',
+    'assets/gallery/screenshot_draktheron_full.webp',
+    'assets/gallery/screenshot_garden.webp',
+    'assets/gallery/screenshot_magma.webp',
+    'assets/gallery/screenshot_utgardekeep_full.webp',
   ];
 
   //Footer
