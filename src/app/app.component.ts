@@ -48,6 +48,18 @@ export class AppComponent {
   ];
   public textoBotonEdClassic: string = 'Selecciona Classic';
 
+  //Multimedia
+  public listUrlsImgsMultimedia: string[] = [
+    'assets/cinematic_render_1.webp',
+    'assets/cinematic_render_2.webp',
+    'assets/cinematic_render_frostmourne_full.webp',
+    'assets/cinematic_render_scourge_full.webp',
+    'assets/screenshot_draktheron_full.webp',
+    'assets/screenshot_garden.webp',
+    'assets/screenshot_magma.webp',
+    'assets/screenshot_utgardekeep_full.webp',
+  ];
+
   //Footer
   public textoDerechos: string =
     '©2023 Blizzard Entertainment, Inc. Todos los derechos reservados. Todas las marcas comerciales a las que se hace referencia son propiedad de sus respectivos dueños.';

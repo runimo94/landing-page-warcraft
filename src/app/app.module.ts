@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SeccionDatosComponent } from './components/seccion-datos/seccion-datos.component';
 import { EdicionComponent } from './components/edicion/edicion.component';
 import { FooterModule } from './components/footer/footer.module';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FooterModule } from './components/footer/footer.module';
     HeaderComponent,
     SeccionDatosComponent,
     EdicionComponent,
+    GalleryComponent,
   ],
   imports: [BrowserModule, FooterModule],
   providers: [],
