@@ -2,48 +2,15 @@
   <app-header></app-header>
 
   <section>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 items-center">
-      <div class="flex flex-col gap-8">
-        <h1 class="text-gray-300 font-sans font-black text-3xl">¡Entra en el mundo de World of Warcraft y vive una
-          aventura épica!</h1>
-        <p class="text-gray-300 font-sans font-semibold text-lg">
-          Con más de 15 años
-          de
-          historia,
-          este juego de rol en
-          línea masivo cuenta con una comunidad activa de jugadores de todo el mundo, una amplia variedad de razas y
-          clases,
-          y una historia épica que se desarrolla en un mundo de fantasía. ¡No pierdas la oportunidad de formar parte de
-          esta
-          aventura!
-        </p>
-      </div>
-      <div><img class="w-auto" src="../assets/screenshot_bridge.webp"
-          alt="captura de pantalla del videjuego World of Warcraft"></div>
-    </div>
+    <app-seccion-datos [titulo]="titulo1" [texto]="texto1" [urlImagen]="urlImg1"
+      [posLeftImg]="posLeftImg1"></app-seccion-datos>
   </section>
 
   <hr>
 
   <section>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 items-center">
-      <div>
-        <img class="w-auto" src="../assets/screenshot_icecrown_full.webp"
-          alt="captura de pantalla del videjuego World of Warcraft">
-      </div>
-      <div class="flex flex-col gap-8">
-        <h1 class="text-gray-300 font-sans font-black text-3xl">
-          Conoce las características clave de World of Warcraft y comienza tu aventura
-        </h1>
-        <p class="text-gray-300 font-sans font-semibold text-lg">
-          Explora un mundo de fantasía épico con una variedad de razas y clases.
-          Lucha contra criaturas poderosas y completa misiones épicas.
-          Desarrolla tu personaje a medida que subes de nivel.
-          Conecta con una comunidad activa de jugadores de todo el mundo.
-          Descubre nuevos contenidos con actualizaciones regulares.
-        </p>
-      </div>
-    </div>
+    <app-seccion-datos [titulo]="titulo2" [texto]="texto2" [urlImagen]="urlImg2"
+      [posLeftImg]="posLeftImg2"></app-seccion-datos>
   </section>
 
   <hr>
