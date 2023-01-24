@@ -46,4 +46,8 @@ export class AppComponent {
     'Mayor importancia en el progreso de nivel de personaje y mundo mas inmersivo',
   ];
   public textoBotonEdClassic: string = 'Selecciona Classic';
+
+  //Footer
+  public textoDerechos: string =
+    '©2023 Blizzard Entertainment, Inc. Todos los derechos reservados. Todas las marcas comerciales a las que se hace referencia son propiedad de sus respectivos dueños.';
 }
