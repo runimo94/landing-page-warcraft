@@ -1,1 +1,10 @@
-<p>other-games works!</p>
+<div class="px-10 text-gray-300 col-span-2 md:col-span-1 justify-center text-center md:text-start">
+  <h2 class="font-extrabold text-xl">{{titulo}}</h2>
+  <ul class="flex flex-col py-3 gap-2">
+    <li *ngFor="let game of listGames">
+      <a [href]="game.url">
+        {{ game.name }}
+      </a>
+    </li>
+  </ul>
+</div>
