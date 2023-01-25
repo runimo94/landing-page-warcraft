@@ -12,6 +12,9 @@ module.exports = {
         map_northrend: "url(assets/background/map_northrend_gray.webp)",
         forest: "url(assets/background/bg_forest.webp)",
       },
+      colors: {
+        "blizz-color": "#00d1ff",
+      },
     },
   },
   plugins: [],
