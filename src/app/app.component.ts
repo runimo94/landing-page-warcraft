@@ -17,7 +17,8 @@ export class AppComponent {
     { name: 'Ediciones', id: 'ediciones' },
     { name: 'Multimedia', id: 'multimedia' },
   ];
-  public headerLogoUrl: string = 'assets/world-of-warcraft.svg';
+  public headerLogoUrl1: string = 'assets/blizz.svg';
+  public headerLogoUrl2: string = 'assets/world-of-warcraft.svg';
 
   //Datos de la primera sección
   public titulo1: string =
@@ -37,7 +38,7 @@ export class AppComponent {
 
   //Datos seccion ediciones
   //Edicion retail
-  public imgEdRetail: string = '../../../assets/world-of-warcraft.svg';
+  public imgEdRetail: string = '../../../assets/world-of-warcraft-2.svg';
   public tituloEdRetail: string = 'Edicion Retail';
   public listaCaracEdRetail: string[] = [
     'Juega con las nuevas clases como el Monje o Evocador',
