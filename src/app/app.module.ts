@@ -7,6 +7,7 @@ import { SeccionDatosComponent } from './components/seccion-datos/seccion-datos.
 import { EdicionComponent } from './components/edicion/edicion.component';
 import { FooterModule } from './components/footer/footer.module';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { ImageComponent } from './components/image/image.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     SeccionDatosComponent,
     EdicionComponent,
     GalleryComponent,
+    ImageComponent,
   ],
   imports: [BrowserModule, FooterModule],
   providers: [],
