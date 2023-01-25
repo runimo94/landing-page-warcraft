@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SectionObj } from './components/header/header.component';
 import { FooterService } from './services/footer.service';
 
 @Component({
@@ -9,7 +10,16 @@ import { FooterService } from './services/footer.service';
 export class AppComponent {
   title = 'landing-page-warcraft';
 
-  // Datos de la primera sección
+  //Datos del header
+  public listHeader: SectionObj[] = [
+    { name: 'Resumen', id: 'resumen' },
+    { name: 'Características', id: 'caracteristicas' },
+    { name: 'Ediciones', id: 'ediciones' },
+    { name: 'Multimedia', id: 'multimedia' },
+  ];
+  public headerLogoUrl: string = 'assets/world-of-warcraft.svg';
+
+  //Datos de la primera sección
   public titulo1: string =
     '¡Entra en el mundo de World of Warcraft y vive una aventura épica!';
   public texto1: string =

@@ -1,14 +1,13 @@
-<app-header></app-header>
+<app-header [urlLogo]="headerLogoUrl" [listSectionObject]="listHeader"></app-header>
 
 <div class="flex flex-col">
-
-  <div class="container mx-auto flex flex-col pb-10 px-4 md:py-16 gap-y-16">
+  <div id="resumen" class="container mx-auto flex flex-col pb-10 px-4 md:py-16 gap-y-16">
     <section>
       <app-seccion-datos [titulo]="titulo1" [texto]="texto1" [urlImagen]="urlImg1"
         [posLeftImg]="posLeftImg1"></app-seccion-datos>
     </section>
 
-    <section>
+    <section id="caracteristicas">
       <app-seccion-datos [titulo]="titulo2" [texto]="texto2" [urlImagen]="urlImg2"
         [posLeftImg]="posLeftImg2"></app-seccion-datos>
     </section>
@@ -17,8 +16,7 @@
   <div class="bg-divider h-12">
   </div>
 
-
-  <div class="bg-map_northrend bg-cover py-16">
+  <div id="ediciones" class="bg-map_northrend bg-cover py-16">
     <section class="container px-4 mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-14">
         <div class="col-span-1 md:col-span-2 mx-auto">
@@ -38,7 +36,7 @@
   </div>
 
 
-  <div class="bg-forest bg-cover py-16">
+  <div id="multimedia" class="bg-forest bg-cover py-16">
     <section class="container mx-auto px-4">
       <app-gallery [listUrlsImgs]="listUrlsImgsMultimedia"></app-gallery>
     </section>
