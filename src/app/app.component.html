@@ -2,7 +2,7 @@
 
 <div class="flex flex-col">
 
-  <div class="container mx-auto flex flex-col pb-10 md:py-16 gap-y-16">
+  <div class="container mx-auto flex flex-col pb-10 px-4 md:py-16 gap-y-16">
     <section>
       <app-seccion-datos [titulo]="titulo1" [texto]="texto1" [urlImagen]="urlImg1"
         [posLeftImg]="posLeftImg1"></app-seccion-datos>
@@ -19,7 +19,7 @@
 
 
   <div class="bg-map_northrend bg-cover py-16">
-    <section class="container mx-auto">
+    <section class="container px-4 mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-14">
         <div class="col-span-1 md:col-span-2 mx-auto">
           <h2 class="text-gray-300 font-sans font-black text-3xl text-center">
@@ -39,7 +39,7 @@
 
 
   <div class="bg-forest bg-cover py-16">
-    <section class="container mx-auto">
+    <section class="container mx-auto px-4">
       <app-gallery [listUrlsImgs]="listUrlsImgsMultimedia"></app-gallery>
     </section>
   </div>
@@ -48,7 +48,7 @@
   </div>
 
   <div class="bg-backstone bg-cover pt-16">
-    <section class="container mx-auto">
+    <section class="container mx-auto px-4">
       <app-footer [bottomText]="textoDerechos"></app-footer>
     </section>
   </div>
