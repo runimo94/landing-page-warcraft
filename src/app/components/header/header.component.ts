@@ -10,7 +10,8 @@ export interface SectionObj {
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  @Input() urlLogo?: string;
+  @Input() urlLogo1?: string;
+  @Input() urlLogo2?: string;
   @Input() listSectionObject?: SectionObj[];
 
   clickNav(id: string): void {

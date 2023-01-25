@@ -2,17 +2,21 @@
   <nav class="backdrop-blur-lg backdrop-brightness-150 rounded-lg
     py-3 px-10 w-full flex justify-between">
 
-    <div class="flex flex-row gap-6 items-center">
-      <img class="w-12 inline" [src]="urlLogo" alt="Wow icon" />
+    <div class="flex flex-row">
+      <img class="w-24 inline" [src]="urlLogo1" alt="Blizz icon" />
 
-      <div class="font-sans text-gray-300 font-medium w-auto hidden lg:inline">
-        <ul class="flex flex-row gap-2">
-          <li *ngFor="let section of listSectionObject" class="hover:bg-white hover:bg-opacity-5 rounded-lg py-2 px-3">
-            <button (click)="scrollToElement(section.id, 100)" class="text-gray-300 text-lg rounded-lg px-4 py-2">
-              {{section.name}}
-            </button>
-          </li>
-        </ul>
+      <div class="flex flex-row gap-2 pl-8 items-center">
+        <img class="w-12 inline" [src]="urlLogo2" alt="Wow icon" />
+
+        <div class="font-sans text-gray-300 font-medium w-auto hidden xl:inline">
+          <ul class="flex flex-row gap-2">
+            <li *ngFor="let section of listSectionObject" class="hover:bg-white hover:bg-opacity-5 rounded-lg">
+              <button (click)="scrollToElement(section.id, 100)" class="text-gray-300 text-lg rounded-lg px-4 py-2">
+                {{section.name}}
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
 
     </div>
