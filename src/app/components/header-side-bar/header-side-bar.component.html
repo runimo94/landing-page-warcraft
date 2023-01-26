@@ -1,0 +1,60 @@
+<header class="sticky top-0 z-10">
+  <nav class="flex flex-row backdrop-blur-lg backdrop-brightness-150
+  py-1 px-2 w-full justify-between">
+
+    <img (click)="toggle('leftSideNav')" class="w-12 px-3 hover:bg-white hover:bg-opacity-5 rounded-lg"
+      src="../../../assets/menu.svg" alt="icono de menu">
+    <img class="w-12" [src]="urlLogo2" alt="">
+    <img (click)="toggle('rightSideNav')" class="w-12 px-3 hover:bg-white hover:bg-opacity-5 rounded-lg"
+      src="../../../assets/profile.svg" alt="icono de perfil">
+
+  </nav>
+
+  <!--Left Sidenav-->
+  <nav id="leftSideNav"
+    class="fixed top-0 bottom-0 left-0 p-2 w-80 md:w-[400px] overflow-y-auto text-center bg-brown-1 hidden">
+    <div class="flex">
+      <img (click)="toggle('leftSideNav')" class="w-10 px-2 hover:bg-white hover:bg-opacity-5 rounded-lg"
+        src="../../../assets/close.svg" alt="">
+      <img class="w-20 px-1 mx-auto" [src]="urlLogo1" alt="">
+    </div>
+
+    <img class="mt-10" src="../../../assets/world-of-warcraft-white-logo-hd.png" alt="">
+
+    <ul class="flex flex-col py-8 gap-y-2">
+      <li *ngFor="let section of listSectionObject" class="hover:bg-white hover:bg-opacity-5 rounded-lg text-left">
+        <div (click)="scrollToElement(section.id, 100)"
+          class="text-white font-opensans font-bold text-lg rounded-lg px-4 py-2 cursor-pointer">
+          {{section.name}}
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!--Right Sidenav-->
+  <nav id="rightSideNav"
+    class="fixed top-0 bottom-0 right-0 p-2 w-80 md:w-[400px] overflow-y-auto text-center bg-brown-1 hidden">
+    <div class="flex">
+      <img class="w-20 px-1 mx-auto" [src]="urlLogo1" alt="">
+      <img (click)="toggle('rightSideNav')" class="w-10 px-2 hover:bg-white hover:bg-opacity-5 rounded-lg"
+        src="../../../assets/close.svg" alt="">
+    </div>
+
+    <img class="mt-10" src="../../../assets/world-of-warcraft-white-logo-hd.png" alt="">
+
+    <ul class="flex flex-col py-8 gap-y-2">
+      <li class="hover:bg-white hover:bg-opacity-5 rounded-lg text-center">
+        <button class="text-white font-opensans font-bold text-lg px-4 py-2">
+          Identificate
+        </button>
+      </li>
+      <li class="hover:bg-white hover:bg-opacity-5 text-center font-bold">
+        <button class="hover:bg-gray-100 bg-gray-300 w-full text-black font-opensans border border-gray-300 
+        rounded-lg px-4 py-2">
+          Registrate
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+</header>
