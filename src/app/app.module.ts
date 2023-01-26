@@ -13,6 +13,7 @@ import { FooterModule } from './components/footer/footer.module';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ImageComponent } from './components/image/image.component';
 import { CaracteristicasComponent } from './components/caracteristicas/caracteristicas.component';
+import { HeaderSideBarComponent } from './components/header-side-bar/header-side-bar.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CaracteristicasComponent } from './components/caracteristicas/caracteri
     GalleryComponent,
     ImageComponent,
     CaracteristicasComponent,
+    HeaderSideBarComponent,
   ],
   imports: [
     BrowserModule,
