@@ -14,16 +14,9 @@ export class HeaderComponent {
   @Input() urlLogo2?: string;
   @Input() listSectionObject?: SectionObj[];
 
-  clickNav(id: string): void {
-    document
-      .getElementById(id)
-      ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
   scrollToElement(id: string, offset: number): void {
     const element = document.getElementById(id);
     const position = element?.getBoundingClientRect();
-    //top: position?.top? + offsetFinal,
     const offsetFinal = window.scrollY - offset;
     const scrolloptions: ScrollToOptions = {
       top: position?.top! + offsetFinal,
