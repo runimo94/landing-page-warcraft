@@ -15,6 +15,10 @@ module.exports = {
       colors: {
         "blizz-color": "#00d1ff",
       },
+      fontFamily: {
+        metamorph: ["Metamorphous", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+      },
     },
   },
   plugins: [],

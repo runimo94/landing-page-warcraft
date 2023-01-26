@@ -1,16 +1,15 @@
 <div class="flex flex-col items-center">
   <img class="w-32 mb-5" [src]="urlImg" alt="Retail">
-  <h2 class="text-gray-300 font-sans font-black text-3xl">
+  <h2 class="text-white font-sans font-black text-3xl">
     {{titulo}}
   </h2>
   <ul class="flex flex-col py-5 px-16 gap-5">
-    <li *ngFor="let caracteristica of listaCaracteristicas" class="text-gray-300 text-center">
+    <li *ngFor="let caracteristica of listaCaracteristicas" class="text-gray-300 font-roboto text-center">
       <img class="w-12 inline" src="../../../assets/li-item.webp" alt="">
       {{caracteristica}}
-      <!-- </span> -->
     </li>
   </ul>
-  <button class=" hover:bg-gray-100 bg-gray-300 text-black border border-gray-300 rounded-lg px-4 py-2 ">
+  <button class=" hover:bg-gray-100 bg-gray-300 text-black border font-bold border-gray-300 rounded-lg px-4 py-2 ">
     {{textoBoton}}
   </button>
 </div>
