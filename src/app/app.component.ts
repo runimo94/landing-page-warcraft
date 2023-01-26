@@ -39,7 +39,7 @@ export class AppComponent {
   public imgEdRetail: string = '../../../assets/world-of-warcraft-2.svg';
   public tituloEdRetail: string = 'Edicion Retail';
   public listaCaracEdRetail: string[] = [
-    'Juega con las nuevas clases como el Monje o Evocador',
+    'Juega como Monje, Evocador, Caballero de la muerte y Cazador de demonios',
     'Disfruta de contenido actualizado a la última expansión',
     'Gráficos y modelos mejorados',
     'Nuevas dificultades y mecánicas como mazmorras de dificultad mítica plus',
@@ -50,7 +50,7 @@ export class AppComponent {
   public imgEdClassic: string = '../../../assets/world-of-warcraft.svg';
   public tituloEdClassic: string = 'Edicion Classic';
   public listaCaracEdClassic: string[] = [
-    'Recuerda el juego como se lanzó en 2004',
+    'Recuerda el juego como se lanzó en 2004 con las 9 clases originales',
     'Toda la dificultad de antaño en los tiempos de ahora',
     'Más social e interactivo',
     'Mayor importancia en el progreso de nivel de personaje y mundo mas inmersivo',
