@@ -12,6 +12,7 @@ import { EdicionComponent } from './components/edicion/edicion.component';
 import { FooterModule } from './components/footer/footer.module';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ImageComponent } from './components/image/image.component';
+import { CaracteristicasComponent } from './components/caracteristicas/caracteristicas.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ImageComponent } from './components/image/image.component';
     EdicionComponent,
     GalleryComponent,
     ImageComponent,
+    CaracteristicasComponent,
   ],
   imports: [
     BrowserModule,
