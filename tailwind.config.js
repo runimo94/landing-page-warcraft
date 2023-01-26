@@ -17,7 +17,7 @@ module.exports = {
       },
       fontFamily: {
         metamorph: ["Metamorphous", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
+        opensans: ["Open Sans", "sans-serif"],
       },
     },
   },

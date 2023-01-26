@@ -1,14 +1,11 @@
 <div class="flex flex-col px-20 sm:px-32 md:px-4 lg:px-20 xl:px-36 2xl:px-52 items-center">
   <img class="w-32 mb-5" [src]="urlImg" alt="Retail">
-  <h2 class="text-white font-sans font-black text-3xl">
+  <h2 class="text-white font-opensans font-black text-3xl">
     {{titulo}}
   </h2>
   <ul class="flex flex-col py-5 gap-5 items-start text-start md:items-start md:text-start
   lg:items-start lg:text-start">
-    <li *ngFor="let caracteristica of listaCaracteristicas" class="text-gray-300 font-roboto">
-      <!-- <img class="w-12 inline" src="../../../assets/li-item.webp" alt="">
-      {{caracteristica}} -->
-
+    <li *ngFor="let caracteristica of listaCaracteristicas" class="text-gray-300">
       <div class="flex flex-row items-center">
         <img class="w-12 inline" src="../../../assets/li-item.webp" alt="">
         <p>{{caracteristica}}</p>
