@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         "blizz-color": "#00d1ff",
+        "brown-1": "#6a4c36",
       },
       fontFamily: {
         metamorph: ["Metamorphous", "sans-serif"],
