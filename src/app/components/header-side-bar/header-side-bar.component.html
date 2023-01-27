@@ -2,19 +2,19 @@
   <nav class="flex flex-row backdrop-blur-lg backdrop-brightness-150
   py-1 px-2 w-full justify-between">
 
-    <img (click)="toggle('leftSideNav')" class="w-12 px-3 hover:bg-white hover:bg-opacity-5 rounded-lg"
+    <img (click)="handleSideNav('open','left')" class="w-12 px-3 hover:bg-white hover:bg-opacity-5 rounded-lg"
       src="../../../assets/menu.svg" alt="icono de menu">
     <img class="w-12" [src]="urlLogo2" alt="">
-    <img (click)="toggle('rightSideNav')" class="w-12 px-3 hover:bg-white hover:bg-opacity-5 rounded-lg"
+    <img (click)="handleSideNav('open','right')" class="w-12 px-3 hover:bg-white hover:bg-opacity-5 rounded-lg"
       src="../../../assets/profile.svg" alt="icono de perfil">
 
   </nav>
 
   <!--Left Sidenav-->
-  <nav id="leftSideNav"
-    class="fixed top-0 bottom-0 left-0 p-2 w-80 md:w-[400px] overflow-y-auto text-center bg-brown-1 hidden">
+  <nav id="leftSideNav" class="fixed top-0 bottom-0 left-0 p-2 w-80 md:w-[400px] overflow-y-auto text-center bg-brown-1 hidden
+    animate__animated animate__faster">
     <div class="flex">
-      <img (click)="toggle('leftSideNav')" class="w-10 px-2 hover:bg-white hover:bg-opacity-5 rounded-lg"
+      <img (click)="handleSideNav('close','left')" class="w-10 px-2 hover:bg-white hover:bg-opacity-5 rounded-lg"
         src="../../../assets/close.svg" alt="">
       <img class="w-20 px-1 mx-auto" [src]="urlLogo1" alt="">
     </div>
@@ -32,11 +32,11 @@
   </nav>
 
   <!--Right Sidenav-->
-  <nav id="rightSideNav"
-    class="fixed top-0 bottom-0 right-0 p-2 w-80 md:w-[400px] overflow-y-auto text-center bg-brown-1 hidden">
+  <nav id="rightSideNav" class="fixed top-0 bottom-0 right-0 p-2 w-80 md:w-[400px] overflow-y-auto text-center bg-brown-1 hidden
+    animate__animated animate__faster">
     <div class="flex">
       <img class="w-20 px-1 mx-auto" [src]="urlLogo1" alt="">
-      <img (click)="toggle('rightSideNav')" class="w-10 px-2 hover:bg-white hover:bg-opacity-5 rounded-lg"
+      <img (click)="handleSideNav('close','right')" class="w-10 px-2 hover:bg-white hover:bg-opacity-5 rounded-lg"
         src="../../../assets/close.svg" alt="">
     </div>
 
