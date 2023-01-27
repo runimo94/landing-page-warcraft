@@ -1,5 +1,5 @@
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 place-items-center">
-  <app-image class="w-60 md:w-64 xl:w-72 2xl:w-80 mb-5" *ngFor="let urlImg of listUrlsImgs; let i = index"
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 place-items-center">
+  <app-image class="w-80 md:w-64 xl:w-72 2xl:w-80 mb-5" *ngFor="let urlImg of listUrlsImgs; let i = index"
     [lightbox]="i" [gallery]="galleryId" [url]="urlImg">
   </app-image>
 </div>
