@@ -3,10 +3,10 @@
   py-1 px-2 w-full justify-between">
 
     <img (click)="handleSideNav('open','left')" class="w-12 px-3 hover:bg-white hover:bg-opacity-5 rounded-lg"
-      src="../../../assets/menu.svg" alt="icono de menu">
+      src="assets/menu.svg" alt="icono de menu">
     <img class="w-12" [src]="urlLogo2" alt="">
     <img (click)="handleSideNav('open','right')" class="w-12 px-3 hover:bg-white hover:bg-opacity-5 rounded-lg"
-      src="../../../assets/profile.svg" alt="icono de perfil">
+      src="assets/profile.svg" alt="icono de perfil">
 
   </nav>
 
@@ -15,11 +15,11 @@
     animate__animated animate__faster">
     <div class="flex">
       <img (click)="handleSideNav('close','left')" class="w-10 px-2 hover:bg-white hover:bg-opacity-5 rounded-lg"
-        src="../../../assets/close.svg" alt="">
+        src="assets/close.svg" alt="">
       <img class="w-20 px-1 mx-auto" [src]="urlLogo1" alt="">
     </div>
 
-    <img class="mt-10" src="../../../assets/world-of-warcraft-white-logo-hd.png" alt="">
+    <img class="mt-10" src="assets/world-of-warcraft-white-logo-hd.png" alt="">
 
     <ul class="flex flex-col py-8 gap-y-2">
       <li *ngFor="let section of listSectionObject" class="hover:bg-white hover:bg-opacity-5 rounded-lg text-left">
@@ -37,10 +37,10 @@
     <div class="flex">
       <img class="w-20 px-1 mx-auto" [src]="urlLogo1" alt="">
       <img (click)="handleSideNav('close','right')" class="w-10 px-2 hover:bg-white hover:bg-opacity-5 rounded-lg"
-        src="../../../assets/close.svg" alt="">
+        src="assets/close.svg" alt="">
     </div>
 
-    <img class="mt-10" src="../../../assets/world-of-warcraft-white-logo-hd.png" alt="">
+    <img class="mt-10" src="assets/world-of-warcraft-white-logo-hd.png" alt="">
 
     <ul class="flex flex-col py-8 gap-y-2">
       <li class="hover:bg-white hover:bg-opacity-5 rounded-lg text-center">
