@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { FooterService } from '../../services/footer.service';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +7,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  @Input() public bottomText?: string;
+  public bottomText?: string;
+
+  constructor(private footerService: FooterService) {
+    this.bottomText = this.footerService.bottomText;
+  }
 }
